@@ -4,7 +4,7 @@
 /chat-app/tmp
 /chat-app/out-tsc
 /chat-app/bazel-out
-
+keys/
 # Node
 node_modules
 npm-debug.log

@@ -1,0 +1,27 @@
+<div class="container">
+
+    <div class="signup" *ngIf="isSigninSectionAppear" [formGroup]="signupData">
+        <h2>Sign Up</h2>
+        <div class="editable-con">
+            <div class="inputs">
+                <mat-icon>person</mat-icon>
+                <input class="signup-input" type="text" placeholder="Enter Username" (change)="usernameChange()" formControlName="username"/>
+            </div>
+            <p class="error" >{{signupData.get('usernameError')?.value}}</p>
+        </div>
+        <div class="editable-con">
+            <div class="inputs">
+                <input class="signup-input" [type]="isPasswordLock?'password':'text'" placeholder="Enter password" (change)="passwordChange()" formControlName="password"/>
+                <mat-icon *ngIf="!isPasswordLock" (click)="passwordTypeChange(0)">lock_open_right</mat-icon>
+                <mat-icon *ngIf="isPasswordLock" (click)="passwordTypeChange(1)">lock</mat-icon>
+            </div>
+            <p class="error" >{{signupData.get('passwordError')?.value}}</p>
+        </div>
+        <div class="login-con">
+            <p class="or-you-can">Already have account?</p>
+            <p class="login-btn">login</p>
+        </div>
+        <p class="submit-btn" (click)="submitBtn()">submit</p>
+    </div>
+
+</div>

@@ -1,0 +1,97 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #0f1113;
+}
+h2{
+    color: white;
+}
+.signup{
+    display: flex;
+    background-color: rgb(20, 23, 26);
+    width: 50%;
+    padding: 10px;
+    border-radius: 4px;
+    /* border: 1px solid red; */
+    height:fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+.editable-con{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 4px 0px;
+    height: fit-content;
+    background-color: transparent;
+    /* border: 1px solid red; */
+}
+.inputs{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    /* border: 1px solid red; */
+    align-items: center;
+    border-bottom: 1px solid red;
+}
+mat-icon{
+    color: white;
+    font-size: 25px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+.inputs .signup-input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 91%;
+    height: fit-content;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 2px 0px;
+    padding: 7px 4px;
+}
+.error{
+    color: white;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: red;
+}
+.login-con{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.login-con .or-you-can{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    margin: 0px 1px;
+    padding: 4px 0px;
+}
+.login-con .login-btn{
+    color: rgb(0, 132, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+    margin: 0px 2px;
+    padding: 4px 0px;
+}
+.submit-btn{
+    color: white;
+    background-color: rgb(0, 150, 150);
+    text-align: center;
+    margin: 4px;
+    width: 70%;
+    padding: 14px;
+}
